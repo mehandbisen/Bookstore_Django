@@ -61,17 +61,7 @@ git clone https://github.com/yourusername/bookstore.git
 cd bookstore
 ```
 
-### 2. Create and Activate Virtual Environment
-
-```bash
-python -m venv env
-# Windows
-env\Scripts\activate
-# Linux/Mac
-source env/bin/activate
-```
-
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -83,7 +73,7 @@ pip install -r requirements.txt
 > pip freeze > requirements.txt
 > ```
 
-### 4. Configure MySQL Database
+### 3. Configure MySQL Database
 
 In `bookstore/settings.py`:
 
@@ -100,52 +90,21 @@ DATABASES = {
 }
 ```
 
-### 5. Run Migrations
+### 4. Run Migrations
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 6. Create a Superuser
+### 5. Create a Superuser
 
 ```bash
 python manage.py createsuperuser
 ```
 
-### 7. Start the Development Server
+### 6. Start the Development Server
 
 ```bash
 python manage.py runserver
 ```
-
-Open your browser and go to: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
----
-
-## 🔐 Admin Panel
-
-Visit [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) and log in with your superuser credentials to manage books and users.
-
----
-
-## 📝 Future Improvements
-
-- 📸 Add book cover uploads
-- 🔍 Implement search and filtering
-- 🛒 Add shopping cart and checkout
-- 🌐 Add REST API support for books
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 💬 Feedback & Contributions
-
-Feel free to fork this repo, suggest changes, or submit a pull request!
-
-Made with ❤️ using Django.
